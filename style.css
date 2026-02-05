@@ -259,7 +259,7 @@ input:checked + .slider:before {
 
   html,
   body {
-    height: 100%;
+    height: fit-content;
   }
 
   body {
@@ -272,7 +272,7 @@ input:checked + .slider:before {
     flex-direction: column;
     width: 100%;
     min-width: unset;
-    min-height: 0;
+    min-height: fit-content;
     font-size: 20px;
     margin: 10px auto;
     padding: 0 10px 10px 10px;
@@ -280,6 +280,7 @@ input:checked + .slider:before {
 
   section#game {
     width: 100%;
+    height: fit-content;
     place-content: center;
     padding: 10px;
     min-height: 0;
