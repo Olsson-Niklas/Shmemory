@@ -153,7 +153,7 @@ div.toggle-switch {
   min-width: 200px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
   font-size: 20px;
 }
 
@@ -217,4 +217,98 @@ input:checked + .slider:before {
 
 .slider.round:before {
   border-radius: 50%;
+}
+
+@media (max-width: 500px) {
+  header {
+    font-size: 2rem;
+  }
+
+  main {
+    width: 95%;
+  }
+
+  div.banner {
+    height: 200px;
+  }
+
+  button,
+  select {
+    height: fit-content;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 12px;
+  }
+
+  button.memory-card {
+    min-width: 30px;
+    border-radius: 12px;
+    height: auto;
+    width: auto;
+    aspect-ratio: 1 / 1;
+    min-width: 30px;
+  }
+
+  button.memory-card > div {
+    border-radius: 10px;
+  }
+
+  section#game {
+    gap: 5px;
+  }
+
+  html,
+  body {
+    height: 100%;
+  }
+
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-width: unset;
+    min-height: 0;
+    font-size: 20px;
+    margin: 10px auto;
+    padding: 0 10px 10px 10px;
+  }
+
+  section#game {
+    width: 100%;
+    place-content: center;
+    padding: 10px;
+    min-height: 0;
+  }
+
+  div.confirmation {
+    width: 70%;
+  }
+
+  div.toggle-switch > p {
+    font-size: 16px;
+  }
+
+  div.menu-wrapper {
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+  }
+
+  div.menu-wrapper > select,
+  div.menu-wrapper > button#btnStart {
+    flex: 1;
+    min-width: 80px;
+  }
+
+  div.toggle-switch {
+    width: 100%;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    gap: 10px;
+  }
 }
