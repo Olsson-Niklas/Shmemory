@@ -1,8 +1,16 @@
 @font-face {
-  font-family: "Zilap Marine";
+  font-family: "Zilap-Marine";
   src:
-    url("/fonts/woff2/zilap-marine/ZilapMarine-14qM.woff2") format("woff2"),
-    url("/fonts/woff/zilap-marine/ZilapMarine-14qM.woff") format("woff");
+    url("fonts/woff2/zilap-marine/ZilapMarine-14qM.woff2") format("woff2"),
+    url("fonts/woff/zilap-marine/ZilapMarine-14qM.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Zain";
+  src:
+    url("fonts/woff2/zain/Zain-Regular.woff2") format("woff2"),
+    url("fonts/woff/zain/Zain-Regular.woff") format("woff");
+  font-weight: 400;
 }
 
 * {
@@ -18,7 +26,7 @@
 }
 
 header {
-  font-family: "Zilap Marine", sans-serif;
+  font-family: "Zilap-Marine", sans-serif;
   background-color: hsl(212, 100%, 10%);
   box-shadow: 0 0 10px #000000;
   font-size: 4rem;
