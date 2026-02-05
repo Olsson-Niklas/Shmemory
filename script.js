@@ -49,6 +49,12 @@ function play() {
   clearInterval(timerInterval)
   pClicks.textContent = "Clicks: 0"
   pTime.textContent = "Time: 0s"
+
+  if (hardcore) {
+    pHardcore.textContent = "HARDCORE"
+  } else {
+    pHardcore.textContent = ""
+  }
 }
 
 // Set the number of cards to be used
@@ -205,6 +211,7 @@ const hardcoreToggle = document.getElementById("hardcoreToggle")
 
 const pClicks = document.getElementById("moves")
 const pTime = document.getElementById("time")
+const pHardcore = document.getElementById("hardcore")
 
 btnYes.addEventListener("click", () => {
   soundMatch.play()
