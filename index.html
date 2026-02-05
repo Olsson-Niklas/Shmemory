@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shmemory</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Shmemory</h1>
+    </header>
+    <div class="banner"></div>
+    <main>
+      <div class="overlay" id="popup">
+        <div class="confirmation">
+          <h2>WARNING</h2>
+          <p>
+            This game is ONLY for COOL PEOPLE!!! <br />
+            Do you confirm you are a COOL person?
+          </p>
+          <div class="buttons">
+            <button id="btnNo">No</button> <button id="btnYes">Yes</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="menu-wrapper">
+        <select id="sizeList">
+          <option value="0">Number of Cards</option>
+          <option value="16">4x4</option>
+          <option value="20">5x4</option>
+          <option value="24">6x4</option>
+          <option value="30">6x5</option>
+          <option value="36">6x6</option>
+        </select>
+        <button id="btnStart">Play</button>
+
+        <!-- W3S https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_switch -->
+        <div class="toggle-switch">
+          <p>Hardcore Mode</p>
+          <label class="switch">
+            <input type="checkbox" id="hardcoreToggle" />
+            <span class="slider round"></span>
+          </label>
+        </div>
+      </div>
+      <div class="stats">
+        <p id="moves"></p>
+        <p id="time"></p>
+      </div>
+      <section id="game"></section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
