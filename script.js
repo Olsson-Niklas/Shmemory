@@ -168,6 +168,7 @@ function resetCards(id1, id2, hardcore) {
       const card = document.getElementById("card" + i)
       card.firstChild.style.display = "none"
     }
+    matchedCards = 0
   }
 
   clickedPictures = []
